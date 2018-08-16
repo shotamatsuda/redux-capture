@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["env", {
+      "targets": { "browsers": "ie >= 11" },
+      "modules": false
+    }]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["env", {
+          "targets": { "node": "current" }
+        }]
+      ],
+      "plugins": ["istanbul"]
+    }
+  }
+}
