@@ -8,4 +8,4 @@ branches:
 script:
 - npm run build
 - npm test
-- codecov
+- npx codecov
