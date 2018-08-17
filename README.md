@@ -20,6 +20,9 @@ npm install redux-capture
 Suppose we have an async [thunk action](https://github.com/reduxjs/redux-thunk) that fetches data and dispatches it as [FSA compliant action](https://github.com/redux-utilities/flux-standard-action):
 
 ```js
+const WILL_FETCH_DATA = 'WILL_FETCH_DATA'
+const DID_FETCH_DATA = 'DID_FETCH_DATA'
+
 function fetchData (path) {
   return async dispatch => {
     // Notify that we are fetching data
