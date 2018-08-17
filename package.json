@@ -1,16 +1,22 @@
 {
   "name": "redux-capture",
   "version": "0.0.1",
+  "license": "MIT",
   "description": "Captures all the actions dispatched by sync or async thunk actions",
   "repository": "shotamatsuda/redux-capture",
+  "bugs": "https://github.com/shotamatsuda/redux-capture/issues",
+  "homepage": "https://github.com/shotamatsuda/redux-capture",
+  "keywords": [
+    "redux",
+    "thunk",
+    "flux"
+  ],
+  "author": "Shota Matsuda <shota@takram.com>",
   "main": "lib/index.js",
   "module": "lib/index.module.js",
   "browser": {
     "lib/index.js": "dist/redux-capture.js"
   },
-  "author": "Shota Matsuda",
-  "license": "MIT",
-  "homepage": "",
   "files": [
     "package.json",
     "README.md",
@@ -30,7 +36,6 @@
     "test": "cross-env NODE_ENV=test nyc mocha --recursive test",
     "watch": "nodemon --watch src --watch test --exec \"npm test\""
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
