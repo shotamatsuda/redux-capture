@@ -27,7 +27,7 @@ function fetchData (path) {
     try {
       const response = await fetch(new URL(path, 'https://example.com'))
       if (!response.ok) {
-        throw new Error(`Failed to fetch with status ${respose.status}`)
+        throw new Error(`Failed to fetch with status ${response.status}`)
       }
       // Dispatch the data as action payload.
       dispatch({
@@ -155,7 +155,7 @@ When `action` is an action object, this returns its `payload`. Throws `payload` 
 
 When `action` is a sync thunk action, this returns its `payload` of the last action dispatched by it. Throws `payload` if `error` of the last action is true.
 
-When `action` is an async thunk action, this return Promise that resolves `payload` of the last action, or rejects with `payload` if `error` of the last action is true.
+When `action` is an async thunk action, this returns Promise that resolves `payload` of the last action, or rejects with `payload` if `error` of the last action is true.
 
 ### `captureLastAction(action, dispatch [, getState])`
 
