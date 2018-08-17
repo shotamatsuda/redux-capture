@@ -1,7 +1,7 @@
 {
   "name": "redux-capture",
   "version": "0.0.1",
-  "description": "",
+  "description": "Captures all the actions dispatched by sync or async thunk actions",
   "repository": "shotamatsuda/redux-capture",
   "main": "lib/index.js",
   "module": "lib/index.module.js",
