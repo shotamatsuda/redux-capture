@@ -1,6 +1,6 @@
 {
   "name": "redux-capture",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "description": "Captures all the actions dispatched by sync or async thunk actions",
   "repository": "shotamatsuda/redux-capture",
